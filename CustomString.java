@@ -60,6 +60,7 @@ public class CustomString {
      */
 	public void setString(String string) {
 		// TODO Implement method
+		myString = string;
 	}
 
     /**
