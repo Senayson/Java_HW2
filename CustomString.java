@@ -50,7 +50,7 @@ public class CustomString {
 	public String getString() {
 		// TODO Implement method
 		
-		return myString;
+		return this.myString;
 	}
 
 	/**
@@ -60,7 +60,7 @@ public class CustomString {
      */
 	public void setString(String string) {
 		// TODO Implement method
-		myString = string;
+		this.myString = string;
 	}
 
     /**
@@ -82,8 +82,17 @@ public class CustomString {
      */
 	public String remove(String arg) {
 		// TODO Implement method
+		String removable = "";
+		System.out.println("this is remo: ");
 		
-	  	return null;
+		for(int i = this.myString.length() - 1; i >= 0; i--) {
+			
+			removable += this.myString.charAt(i);
+			
+			
+		}
+		
+	  	return removable;
 	}
 	
 	/**
